@@ -1,402 +1,488 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ba2151cb72.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>TURISMO PELO MUNDO</title>
 </head>
+
 <body>
     <div class="bg-top">
-        <header>
-            <div class="logo">
-                <h2><strong>Tr'ound</strong></h2>
-            </div>
+        <header class="container">
+            <span class="logo">
+                <h1><strong>Tr'ound</strong></h1>
+            </span>
             <nav>
                 <ul>
-                    <li><a class="linkActive" href="#">Inicio</a></li>
+                    <li><a class="linkActive" href="#">Início</a></li>
                     <li><a href="#">Destinos</a></li>
-                    <li><a href="#">+ Procurados</a></li>
-                    <li><a href="#">Minha lista </a></li>
+                    <li><a href="#"> + Procurados</a></li>
+                    <li><a href="#">Blog</a></li>
                     <li><a href="#">Contatos</a></li>
                 </ul>
             </nav>
         </header>
-        <section class="banner">
+        <section class="banner container">
             <h2>" Uma vez por ano, vá a algum lugar onde nunca esteve antes "</h2>
             <p>Dalai Lama</p>
         </section>
     </div>
 
     <main>
-        <div class="inicio">
-            <h2>Escolha seu proximo destino Agora!</h2>
-            <p>Temos as melhores opções de passeios para voce aproveitar ao maximo as suas ferias.</p>
-        </div>
-        <div class="destinos">
+        <section class="inicio container">
+            <p>Não faltam novos lugares no mundo para descobrir! Uma cidade que oferece grande diversidade, paisagens deslumbrantes e a mais diversa natureza. Alguns destinos se destacam pela estrutura bem edificada, outros pelo grande número de atrações, e com tantas opções, sempre haverá um novo destino para descobrir e amar. Entre tantos lugares para viajar, é difícil escolher o melhor, por isso selecionamos para você os melhores destinos em todos os continentes.</p>
+            <h2>Escolha seu proximo destino agora!</h2>
+        </section>
+
+        <section class="txtCarousel">
+            <h2>Se encante pelos destinos mais procurados no último mes</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousel-img"
+                    style="background-image: url('./assets/img/rio-g7496061b4_1920.jpg')">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-img"
+                    style="background-image: url('./assets/img/pyramids-g99bdaa6b7_1920.jpg')">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-img"
+                    style="background-image: url('./assets/img/eiffel-tower-gcafaa6e07_1920.jpg')">
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+
+
+        <section class="destinos container">
             <h2>Destinos mais procurados do mes</h2>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
+            <div>
+                <div class="row">
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
             </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="destinos">
+        </section>
+
+        <section class="destinos container">
             <h2>Destinos mais procurados do mes</h2>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
+            <div>
+                <div class="row">
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
             </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="destinos">
+        </section>
+
+        <section class="destinos container">
             <h2>Destinos mais procurados do mes</h2>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
+            <div>
+                <div class="row">
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
             </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="destinos">
+        </section>
+
+        <section class="destinos container">
             <h2>Destinos mais procurados do mes</h2>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
+            <div>
+                <div class="row">
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
             </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="destinos">
+        </section>
+
+        <section class="destinos container">
             <h2>Destinos mais procurados do mes</h2>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
+            <div>
+                <div class="row">
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
             </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="destinos">
+        </section>
+
+        <section class="destinos container">
             <h2>Destinos mais procurados do mes</h2>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
+            <div>
+                <div class="row">
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="post col-lg-3 col-sm-6 col-12">
+                        <ul>
+                            <li><img src="./assets/img/quadrado cinza.jpg" alt="Espaço para fotos"></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur
+                                        asperiores
+                                        fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa
+                                        voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
+                                    <li><a href="pais1.html">Saiba mais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
             </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="post">
-                <ul>
-                    <li><img src="./assets/img/quadrado cinza.jpg" alt=""></li>
-                    <li><i class="fa-solid fa-location-dot"></i> Lorem, Ipissum
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur asperiores fuga reiciendis? Laborum molestias magnam quibusdam, saepe quis dolorem ipsa voluptatibus soluta dolore amet nobis dolorum omnis, at minus!</li>
-                        <li><a href="#">Saiba mais</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        </section>
 
     </main>
-    
-    <footer>            
-        <h2>Tr'ound</h2>
-        
+
+    <footer>
+        <span class="logo">
+            <h1>Tr'ound</h1>
+        </span>
+
         <ul>
             <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>            
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
         </ul>
         <p>Às vezes tudo que a gente precisa é viajar</p>
     </footer>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
