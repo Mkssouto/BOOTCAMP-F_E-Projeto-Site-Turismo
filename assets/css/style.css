@@ -9,7 +9,7 @@ html, body {
     width: 100%;
     font-family:'Lato', sans-serif;
     background-color: #001b33;
-    font-size: 10px;
+    /* font-size: 10px; */
 } 
 .container {
     max-width: 1280px;
@@ -19,32 +19,39 @@ html, body {
  .bg-top {
     height: 70vh;
     position: relative;
-    background-image: url('../img/hd-wallpaper-gd8f996ca0_1920.jpg');
+    background-image: url('../img/banner/hd-wallpaper-gd8f996ca0_1920.jpg');
     background-size: cover;
     background-position: center;
     /* width: 100%;
     height: 100%; */
   }
-header {
+/* header {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; */
     /* max-width: 1280px;
     margin: 0 auto;
     width: 100%; */
-    padding: 15px 20px;
+    /* padding: 15px 20px;
     box-sizing: border-box;    
-}
+} */
 header .logo h1 {
     /* float:left; */
     font-family: 'Berkshire Swash', cursive; 
-    font-size: 4.5em;
+    font-size: 30px;
     padding: 10px 20px;
-    box-sizing: border-box;    
+    box-sizing: border-box ;    
     color: #fff;
-    border: 5px solid #fff;
-    border-radius: 45px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: green;
+}
+header > nav > .nav-item > a {
+    font-size: 20px !important;
 }
 header nav {
     padding-top: 25px;
@@ -59,7 +66,7 @@ header nav > ul > li {
 }
 header nav > ul > li > a,
 header nav > ul > li > a:visited {   
-  font-size: 1.8em;
+  font-size: 18px;
   padding: 10px 20px;
   background-color: transparent;
   /* color: rgb(24, 24, 75); */
@@ -91,23 +98,23 @@ nav>ul>li>a:hover:after {
 
 .banner h2 {
     color: #fff;
-    font-size: 2.8em;
+    font-size: 28px;
     padding: 120px 70% 10px 50px; 
 }
 .banner p {
     color: #fff;
-    font-size: 1.5em;
+    font-size: 15pxm;
     padding: 10px 70%  10px 50px;
 }
 .inicio p {
     color: #fff;
-    font-size: 1.8em;
+    font-size: 18px;
     text-align: center;
     padding: 30px 120px 10px 120px; 
 } 
 .inicio h2 {
     color: #fff;
-    font-size: 2.2em;
+    font-size: 22px;
     text-align: center;
     padding: 20px 50px 50px 50px; 
 }
@@ -121,7 +128,7 @@ nav>ul>li>a:hover:after {
     /* color: #001b33; */
     text-align: center;
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: 25px;
     padding: 50px 0 15px;
 }
 
@@ -138,7 +145,7 @@ nav>ul>li>a:hover:after {
     margin: 0 auto;
 }
 .destinos h2 {
-    font-size: 2.0em;
+    font-size: 20px;
     color: #fff;
     padding: 10px;
     padding-top: 50px;
@@ -151,9 +158,11 @@ nav>ul>li>a:hover:after {
 }
 .post img {
     width: 100%;
+    /* width: 282px; */
+    height: 220px;;
 }
 .post i {
-    font-size: 1.3em;
+    font-size: 10px;
     color: #001b33;
     padding-left: 5px;
 }
@@ -171,7 +180,7 @@ nav>ul>li>a:hover:after {
     position: relative;
     line-height: 22px;
     text-align: justify;
-    font-size: 1.5em;
+    font-size: 15px;
 }
 .post > ul > li > ul > li {
     text-decoration: none;
@@ -201,21 +210,30 @@ nav>ul>li>a:hover:after {
     transform: scale(1.0);
     transition: 0.3s;
 }
-
+.modal > .modal-header > img {
+    width: 100%;
+}
+.modal > .modal-body > i {
+    cursor: pointer;
+}
+.modal > .modal-body > a:active {
+    color: red;
+}
 footer {
     background-color: rgba(8, 9, 10, 0.932);
     text-align: center;
     padding-top: 50px;
 }
-footer > .logo > h1 {
+footer > .logo > h1 > a {
     display: inline-block;
     font-family: 'Berkshire Swash', cursive;
-    font-size: 3.0em;
+    font-size: 30px;
     color: #fff;
     padding: 10px 10px;
     border: 3px solid #fff;
     border-radius: 30px;
     margin-bottom: 30px;
+    text-decoration: none;
 }
 footer ul {
     justify-content: center;
@@ -228,7 +246,7 @@ footer ul > li {
 }
 footer ul > li > a,
 footer ul > li > a:visited {   
-  font-size: 1.8em;
+  font-size: 18px;
   padding: 10px 20px;
   text-decoration: none;
 }
@@ -237,31 +255,32 @@ color: #fff;
 }
 footer p {
     color: #fff;
-    font-size: 1.5em;
+    font-size: 15px;
     padding-bottom: 30px;
 }
 @media (max-width: 992px)
 {
 header .logo h1 { 
-    font-size: 3.8em;
-    border-radius: 38px;
+    font-size: 30px;
+    border-radius: 30px;
 }
-.banner h2 {
+/* .banner h2 {
     color: #fff;
     font-size: 2.5em;
 }
 .banner p {
+
     color: #fff;
     font-size: 1.5em;
-}
+} */
 .banner h2 {
     color: #fff;
-    font-size: 2.8em;
+    font-size: 25px;
     padding: 50px 50% 10px 30px; 
 }
 .banner p {
     color: #fff;
-    font-size: 1.5em;
+    font-size: 15px;
     padding: 10px 50%  10px 30px;
 }
 .post ul:hover {
@@ -271,55 +290,84 @@ header .logo h1 {
 }
 header nav > ul > li > a,
 header nav > ul > li > a:visited {   
-  font-size: 1.5em;
+  font-size: 15px;
   padding: 8px 16px;
 }
 footer > .logo > h1 {
-    font-size: 2.5em;
+    font-size: 25px;
     border-radius: 25px;
 }
 }
 @media (max-width: 768px)
 {
 header .logo h1 { 
-    font-size: 3.4em;
-    border-radius: 34px;
+    font-size: 25px;
+    border-radius: 25ppx;
 }
 header nav > ul > li > a,
 header nav > ul > li > a:visited {   
-  font-size: 1.5em;
+  font-size: 15px;
   padding: 8px 16px;
 }
 .banner h2 {
-    color: #fff;
-    font-size: 2.8em;
+    font-size: 25px;
     padding: 50px 50% 10px 30px; 
 }
 .banner p {
-    color: #fff;
-    font-size: 1.5em;
+    font-size: 15px;
     padding: 10px 50%  10px 30px;
 }
 .inicio p {
-    font-size: 1.8em;
+    font-size: 18px;
     padding: 30px 80px 10px 80px; 
 } 
 .inicio h2 {
-    font-size: 2.2em;
+    font-size: 22px;
     padding: 20px 50px 50px 50px; 
 }
 footer > .logo > h1 {
-    font-size: 2.3em;
+    font-size: 23px;
     border-radius: 23px;
 }
 }
 @media (max-width: 575px)
 {
 header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     display: block;
 }
+header .logo h1 {
+    display: inline-block;
+}
 header nav > ul {
-    display: block;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.banner h2 {
+    font-size: 22px;
+    padding: 10px 20% 10px 10px; 
+}
+.banner p {
+    font-size: 13px;
+    padding: 10px 20%  10px 10px;
+}
+.inicio p {
+    font-size: 16px;
+    padding: 30px 10px 10px 10px; 
+} 
+.inicio h2 {
+    font-size: 21px;
+    padding: 20px 20px 50px 20px; 
+}
+.txtCarousel h2 {
+    font-size: 20px;
+}
+footer ul > li > a,
+footer ul > li > a:visited {   
+  font-size: 16px;
+  padding: 10px 6px;
 }
 
 /* CRIAR MENU SANDWISH - TELA ATE 768PX */
