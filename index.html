@@ -8,17 +8,18 @@
     <script src="https://kit.fontawesome.com/ba2151cb72.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>TURISMO PELO MUNDO</title>
 </head>
 
 <body>
     <div class="bg-top">
         <header class="container">
-            <nav class="navbar  navbar-expand-lg navbar-dark bg-transparent">
+            <nav class="navbar  txtLato20 navbar-expand-lg navbar-dark bg-transparent">
                 <div class="container-xl">
                     <a class="navbar-brand" href="#">
                         <span class="logo">
-                            <h1><strong>Tr'ound</strong></h1>
+                            <h1 class="animate__animated animate__heartBeat"><strong>Tr'ound</strong></h1>
                         </span>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -31,7 +32,7 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
-                            
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
@@ -47,7 +48,7 @@
                                     <li><a class="dropdown-item" href="#oceania">Oceania</a></li>
                                     <li><a class="dropdown-item" href="#africa">África</a></li>
 
-                                    
+
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -56,18 +57,18 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#contatos">Contatos</a>
                             </li>
-                            
+                        </ul>
                     </div>
                 </div>
             </nav>
         </header>
 
-            <section class="banner container">
-                <div col-lg-3 col-sm-6 col-12>
-                    <h2>" Uma vez por ano, vá a algum lugar onde nunca esteve antes "</h2>
-                    <p>Dalai Lama</p>
-                </div>
-            </section>
+        <section class="banner container lightSpeedIn">
+            <div>
+                <h2>" Uma vez por ano, vá a algum lugar onde nunca esteve antes "</h2>
+                <p>Dalai Lama</p>
+            </div>
+        </section>
     </div>
 
     <main>
@@ -77,11 +78,11 @@
                 outros pelo grande número de atrações, e com tantas opções, sempre haverá um novo destino para descobrir
                 e amar. Entre tantos lugares para viajar, é difícil escolher o melhor, por isso selecionamos para você
                 os melhores destinos em todos os continentes.</p>
-            <h2>Escolha seu proximo destino agora!</h2>
+            <h2 class="animacao">Escolha seu proximo destino agora!</h2>
         </section>
 
         <section class="txtCarousel">
-            <h2>Se encante pelos 10 países mais visitados do mundo.</h2>
+            <h2 class="">Se encante pelos 10 países mais visitados do mundo</h2>
 
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                 <div class="carousel-indicators">
@@ -110,7 +111,7 @@
                     <div class="carousel-item active">
                         <!-- Usar a imagem dentro de uma DIV e colocar um width:100% e height maximo para que todas tenham o mesmo tamanho no carrocel. A menos que tenhamos todas as fotos com o mesmo tamanho -->
                         <div class="carousel-img"
-                            style="background-image: url('./assets/img/carrocel/eiffel-tower-gcafaa6e07_1920.jpg')">
+                            style="background-image: url('./assets/img/carrocel/eiffel-tower-gcafaa6e07_1920.jpg') ">
                         </div>
                         <div class="carousel-caption d-none d-md-block">
                             <h3>França</h3>
@@ -120,7 +121,7 @@
 
                     <div class="carousel-item">
                         <div class="carousel-img"
-                            style="background-image: url('./assets/img/carrocel/madrid\ catedral_de_almudena-2713916_1920.jpg')">
+                            style="background-image: url('./assets/img/carrocel/madrid-catedral_de_almudena-2713916_1920.jpg')">
                         </div>
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Espanha</h3>
@@ -222,6 +223,7 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+            </div>
         </section>
 
         <section id="brasil" class="destinos container">
@@ -232,38 +234,44 @@
                         <ul>
                             <li><img src="./assets/img/brasil/rio-de-janeiro-1963744_640.jpg"
                                     alt="vista áerea da Enseada de Botafogo e Pão de Açucar"></li>
-                            <li><i class="fa-solid fa-location-dot"></i> Rio de Janeiro, RJ
+                            <li><i class="fa-solid fa-location-dot"></i> Rio de Janeiro, RJ 
                                 <ul>
                                     <li>Rio de Janeiro (informalmente referido como Rio) é um município brasileiro,
                                         capital do estado homônimo, situado no Sudeste do país. Maior destino turístico
                                         internacional no Brasil, da América Latina e de todo o Hemisfério Sul (em 2008),
                                         a capital fluminense é a cidade brasileira mais conhecida no exterior.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalRio">Saiba
-                                            mais</a></li>
+                                    <li>
+                                        <h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalRio">Saiba
+                                                mais</a></h5>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
                     </article>
                     <!-- Modal -->
-                        <div class="modal fade" id="exampleModalRio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg modal-sm">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <img src="./assets/img/brasil/rio-de-janeiro-1963744_640.jpg "  alt="Vista aerea Rio de Janeiro com Pão de Açucar">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h3>Rio de Janeiro, RJ</h3>
+                    <div class="modal fade" id="exampleModalRio" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="modal-title">
+                                        <img src="./assets/img/brasil/rio-de-janeiro-1963744_640.jpg " alt="Vista aerea Rio de Janeiro com Pão de Açucar">
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Rio de Janeiro, RJ</h3>
                                     <p>Rio de Janeiro, informalmente referido como Rio, é um município brasileiro,
                                         capital do estado homônimo, situado no Sudeste do país. Maior destino turístico
                                         internacional no Brasil, da América Latina e de todo o Hemisfério Sul (em 2008),
                                         a capital fluminense é a cidade brasileira mais conhecida no exterior.</p>
-                                    </h5><a href="#staticBackdropRio"><i class="fa-solid fa-plane-departure"></i></a>
-                                    Meu próximo destino</h5>
-                    </div>
-                </div>
-            </div>
+                                    <h5><a href="#staticBackdropRio"><i class="fa-solid fa-plane-departure"></i></a>Meu
+                                        próximo destino</h5>
+                                </div>
+                            </div>
                         </div>
+                    </div>
                     
                     <article class="post col-lg-3 col-sm-6 col-12">
                         <ul>
@@ -276,8 +284,8 @@
                                         do continente americano e de todo o hemisfério sul. São Paulo é a cidade
                                         brasileira mais influente no cenário global, sendo, em 2016, a 11.ª cidade mais
                                         globalizada do planeta</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -294,8 +302,8 @@
                                         cultura afro-brasileira.Primeira capital da América Portuguesa, a cidade é uma
                                         das mais antigas do continente americano e uma das primeiras cidades planejadas
                                         no mundo, ainda no período do Renascimento.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -313,8 +321,8 @@
                                         (Executivo, Legislativo e Judiciário) e 127 embaixadas estrangeiras. A cidade é
                                         considerada um Patrimônio Mundial pela UNESCO, devido ao seu conjunto
                                         arquitetônico e urbanístico</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -342,8 +350,8 @@
                                         encruzilhada entre os itinerários comerciais terrestres e fluviais no coração de
                                         uma rica região agrícola a tornou uma das principais cidades francesas ao longo
                                         do século X, beneficiada com palácios reais, ricas abadias e uma catedral.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -362,8 +370,8 @@
                                         século XII, Amesterdã tornou-se um dos portos mais importantes do mundo durante
                                         o Século XVII. Os canais de Amesterdão e a Linha de Defesa de Amesterdão são
                                         considerados Patrimónios Mundiais pela UNESCO.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -384,8 +392,8 @@
                                         rio através da cidade, cheia de belas e antigas pontes, contrasta com a presença
                                         imponente do grande Castelo de Praga em Hradcany, que domina a capital na margem
                                         esquerda (oriental) do Vltava.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -405,8 +413,8 @@
                                         Roma é geralmente considerada o "berço da cultura e da civilização ocidental e
                                         cristã" e o centro da Igreja Católica. A história de Roma abrange 28 séculos.
                                     </li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -432,8 +440,8 @@
                                         disso, a cidade abriga também as sedes do Fundo Monetário Internacional, do
                                         Banco Mundial, da Organização dos Estados Americanos, entre diversas outras
                                         instituições nacionais e internacionais.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -451,8 +459,8 @@
                                         assuntos internacionais e amplamente considerada como a capital cultural do
                                         mundo. Nova Iorque tem suas raízes na sua fundação em 1624 como um posto de
                                         comércio por colonos neerlandeses, sendo nomeada Nova Amsterdã, em 1626.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -472,8 +480,8 @@
                                         as principais atrações turísticas. Na área do entretenimento a cidade se destaca
                                         por ser palco da residência de shows fixos de grandes ícones da indústria
                                         musical.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -494,8 +502,8 @@
                                         marcos históricos famosos, incluindo a Ponte Golden Gate, os bondes e Chinatown.
                                         A cidade é também um centro financeiro e bancário, sendo sede de mais de 30
                                         instituições financeiras internacionais.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -520,8 +528,8 @@
                                         sua música, o tango. A capital cosmopolita, Buenos Aires, tem como centro a
                                         Praça de Maio, cercada por edifícios imponentes do século XIX, como a Casa
                                         Rosada, o emblemático palácio presidencial.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -538,15 +546,15 @@
                                         de Armas, repleta de palmeiras, abriga a catedral neoclássica e o Museu de
                                         História Nacional. O imenso Parque Metropolitano tem piscinas, um jardim
                                         botânico e um zoológico.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
                     </article>
                     <article class="post col-lg-3 col-sm-6 col-12">
                         <ul>
-                            <li><img src="./assets/img/am_sul/colombia farol cartagena-g06a679723_640.jpg"
+                            <li><img src="./assets/img/am_sul/colombia-farol-cartagena-g06a679723_640.jpg"
                                     alt="Praia com farol em Cartagena"></li>
                             <li><i class="fa-solid fa-location-dot"></i> Colombia
                                 <ul>
@@ -556,8 +564,8 @@
                                         conhecida por seus restaurantes e lojas. Cartagena, na costa caribenha, conta
                                         com uma Cidade Antiga colonial murada, um castelo do século XVI e recifes de
                                         corais.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -574,8 +582,8 @@
                                         colonial de Cusco, é rica em sítios arqueológicos. Na costa árida do Pacífico
                                         fica Lima, a capital, com um centro colonial preservado e coleções importantes
                                         de arte pré-colombiana.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -590,7 +598,7 @@
                 <div class="row">
                     <article class="post col-lg-3 col-sm-6 col-12">
                         <ul>
-                            <li><img src="./assets/img/am_central norte/canada-g9e27c6459_640.jpg"
+                            <li><img src="./assets/img/am_central_norte/canada-g9e27c6459_640.jpg"
                                     alt="Lago cercado de montanhas e árvores"></li>
                             <li><i class="fa-solid fa-location-dot"></i> Canadá
                                 <ul>
@@ -601,15 +609,15 @@
                                         selvagem do Canadá compreendem o Parque Nacional de Banff, repleto de lagos nas
                                         Montanhas Rochosas. Abriga também as Cataratas do Niágara, um famoso conjunto de
                                         enormes cachoeiras.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
                     </article>
                     <article class="post col-lg-3 col-sm-6 col-12">
                         <ul>
-                            <li><img src="./assets/img/am_central norte/cancun-4301422_640.jpg"
+                            <li><img src="./assets/img/am_central_norte/cancun-4301422_640.jpg"
                                     alt="Pier com vista para o maravilhoso mar azul do Caribe"></li>
                             <li><i class="fa-solid fa-location-dot"></i> México
                                 <ul>
@@ -620,15 +628,15 @@
                                         como cidades da era colonial espanhola. Na capital, Cidade do México, lojas
                                         elegantes, museus renomados e restaurantes gourmet atendem às necessidades da
                                         vida moderna.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
                     </article>
                     <article class="post col-lg-3 col-sm-6 col-12">
                         <ul>
-                            <li><img src="./assets/img/am_central norte/cathedral nicaragua-g183873161_640.jpg"
+                            <li><img src="./assets/img/am_central_norte/cathedral-nicaragua-g183873161_640.jpg"
                                     alt="a imponente Catedral de Granada"></li>
                             <li><i class="fa-solid fa-location-dot"></i> Nicaragua
                                 <ul>
@@ -638,15 +646,15 @@
                                         ao norte da capital Manágua. Ao sul está localizada Granada, conhecida pela
                                         arquitetura colonial espanhola e por um arquipélago de ilhotas navegáveis e
                                         ricas em pássaros tropicais.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
                     </article>
                     <article class="post col-lg-3 col-sm-6 col-12">
                         <ul>
-                            <li><img src="./assets/img/am_central norte/panama-city-g980988e51_640.jpg"
+                            <li><img src="./assets/img/am_central_norte/panama-city-g980988e51_640.jpg"
                                     alt="Vista panoramica da Cidade do Panamá"></li>
                             <li><i class="fa-solid fa-location-dot"></i> Panamá
                                 <ul>
@@ -656,8 +664,8 @@
                                         capital, a Cidade do Panamá, arranha-céus modernos, cassinos e casas noturnas
                                         contrastam com as construções coloniais do distrito de Casco Viejo e com a
                                         floresta tropical do Parque Natural Metropolitano.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -672,7 +680,7 @@
                 <div class="row">
                     <article class="post col-lg-3 col-sm-6 col-12">
                         <ul>
-                            <li><img src="./assets/img/asia/muralha da china sunset-g4c4339d81_640.jpg"
+                            <li><img src="./assets/img/asia/muralha-da-china-sunset-g4c4339d81_640.jpg"
                                     alt="Muralha da China ao amanhecer"></li>
                             <li><i class="fa-solid fa-location-dot"></i> China
                                 <ul>
@@ -682,8 +690,8 @@
                                         complexo de palácios da Cidade Proibida e a Praça da Paz Celestial. Xangai é um
                                         centro financeiro global repleto de arranha-céus. A emblemática Muralha da China
                                         corta a região norte do país de leste a oeste.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -700,8 +708,8 @@
                                         data de aproximadamente 300 a.C. Situada em um estreito vale com tumbas, templos
                                         e monumentos esculpidos nos penhascos de arenito cor-de-rosa que a rodeiam,
                                         Petra faz jus ao apelido de "Cidade Rosa". </li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -718,15 +726,15 @@
                                         lustres de cristal e espaço para 40.000 fiéis. Dubai conta com a ultramoderna
                                         torre Burj Khalifa, enormes shopping centers e extravagantes atrações de
                                         entretenimento.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
                     </article>
                     <article class="post col-lg-3 col-sm-6 col-12">
                         <ul>
-                            <li><img src="./assets/img/asia/japao heritage-g76cb9f0e5_640.jpg"
+                            <li><img src="./assets/img/asia/japao-heritage-g76cb9f0e5_640.jpg"
                                     alt="Templo Japones cercado por floridas cerejeiras"></li>
                             <li><i class="fa-solid fa-location-dot"></i> Japão
                                 <ul>
@@ -737,8 +745,8 @@
                                         bomba atômica de Hiroshima) e Hokkaido (famosa como destino para a prática de
                                         esqui). Tóquio, a capital, é conhecida por seus arranha-céus e lojas e pela
                                         cultura pop. </li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -763,8 +771,8 @@
                                         por suas lagoas rodeadas de corais e hotéis de bangalô sobre a água. As ilhas se
                                         caracterizam por praias de areia preta e branca, montanhas, áreas remotas
                                         selvagens e cachoeiras imponentes.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -782,8 +790,8 @@
                                         Suva, uma cidade portuária com arquitetura colonial britânica. O Fiji Museum,
                                         localizado nos Thurston Gardens, da era vitoriana, oferece exposições
                                         etnográficas.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -800,8 +808,8 @@
                                         em Wellington, o Fiordland, na ilha Sul, e os Lagos do Sul foram cenário da
                                         mítica Terra Média nos filmes da série "O Senhor dos Anéis", de Peter Jackson.
                                     </li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -818,8 +826,8 @@
                                         Sydney Opera House, pela Grande Barreira de Coral, pelo vasto deserto interior
                                         chamado Outback e por espécies animais únicas, como cangurus e ornitorrincos.
                                     </li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -834,7 +842,7 @@
                 <div class="row">
                     <article class="post col-lg-3 col-sm-6 col-12">
                         <ul>
-                            <li><img src="./assets/img/africa/cidade do cabo foto aerea-g4dafe41a8_640.jpg"
+                            <li><img src="./assets/img/africa/cidade_do_cabo_foto_aerea-g4dafe41a8_640.jpg"
                                     alt="Vista aerea da Cidade do Cabo"></li>
                             <li><i class="fa-solid fa-location-dot"></i> África do Sul
                                 <ul>
@@ -845,8 +853,8 @@
                                         Stellenbosch e Paarl, colinas escarpadas no Cabo da Boa Esperança, florestas e
                                         lagoas ao longo da Tuinroete (rota dos jardins) e a Cidade do Cabo, que fica ao
                                         pé da montanha da Mesa, de topo achatado.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -864,15 +872,15 @@
                                         dos Reis, ambos em Luxor. A capital, Cairo, abriga monumentos otomanos como a
                                         Mesquita de Muhammad Ali e o Museu Egípcio, com uma coleção de antiguidades.
                                     </li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
                     </article>
                     <article class="post col-lg-3 col-sm-6 col-12">
                         <ul>
-                            <li><img src="./assets/img/africa/seychelles praia-g186ae0daf_640.jpg"
+                            <li><img src="./assets/img/africa/seychelles-praia-g186ae0daf_640.jpg"
                                     alt="Praia rochosa com mar azul e um barco navegando ao fundo"></li>
                             <li><i class="fa-solid fa-location-dot"></i> Ilhas Seychelles
                                 <ul>
@@ -882,15 +890,15 @@
                                         base para visitação das outras ilhas, abriga a capital Victoria. Destacam-se
                                         também as florestas tropicais montanhosas do Parque Nacional Morne Seychellois e
                                         praias como Beau Vallon e Anse Takamaka.</li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
                     </article>
                     <article class="post col-lg-3 col-sm-6 col-12">
                         <ul>
-                            <li><img src="./assets/img/africa/tanzania elefantes africa-g6e50f9998_640.jpg"
+                            <li><img src="./assets/img/africa/tanzania-elefantes-africa-g6e50f9998_640.jpg"
                                     alt="Manada de elefantes passeando pela savana"></li>
                             <li><i class="fa-solid fa-location-dot"></i> Tanzânia
                                 <ul>
@@ -901,8 +909,8 @@
                                         Parque Nacional de Kilimanjaro, onde fica a montanha mais alta da África. Em
                                         alto-mar, estão as ilhas de Zanzibar, de influência árabe, e de Mafia, com um
                                         parque marinho que abriga tubarões-baleia e recifes de corais. </li>
-                                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
-                                            mais</a></li>
+                                    <li><h5><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba
+                                            mais</a></h5></li>
                                 </ul>
                             </li>
                         </ul>
@@ -916,8 +924,9 @@
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"><img
-                                src="./assets/img/passport-g6ca58d820_640.jpg" alt=""></h5>
+                        <div class="modal-title" id="exampleModalLabel">
+                            <img src="./assets/img/passport-g6ca58d820_640.jpg" alt="">
+                        </div>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -926,8 +935,8 @@
                             As coisas boas de uma viagem são infinitas! Além disso, viajando a gente percebe que não
                             existem fronteiras e que a humanidade pode ser mais maravilhosa do que a gente pensa! Boa
                             viagem, amigo! Vá na fé!</p>
-                        </h5><a href="#staticBackdropRio"><i class="fa-solid fa-plane-departure"></i></a> Meu próximo
-                        destino</h5>
+                        <h5><a href="#staticBackdropRio"><i class="fa-solid fa-plane-departure"></i></a> Meu próximo
+                            destino</h5>
                     </div>
                 </div>
             </div>
@@ -937,7 +946,7 @@
 
     <footer id="contatos">
         <span class="logo">
-            <h1><a href="#">Tr'ound</a></h1>
+            <h2><a href="#">Tr'ound</a></h2>
         </span>
 
         <ul>

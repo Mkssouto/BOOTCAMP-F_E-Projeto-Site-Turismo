@@ -9,7 +9,6 @@ html, body {
     width: 100%;
     font-family:'Lato', sans-serif;
     background-color: #001b33;
-    /* font-size: 10px; */
 } 
 .container {
     max-width: 1280px;
@@ -17,25 +16,14 @@ html, body {
     width: 100%;
 }
  .bg-top {
-    height: 70vh;
+    height: 68vh;
     position: relative;
     background-image: url('../img/banner/hd-wallpaper-gd8f996ca0_1920.jpg');
     background-size: cover;
     background-position: center;
-    /* width: 100%;
-    height: 100%; */
+    
   }
-/* header {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; */
-    /* max-width: 1280px;
-    margin: 0 auto;
-    width: 100%; */
-    /* padding: 15px 20px;
-    box-sizing: border-box;    
-} */
+
 header .logo h1 {
     /* float:left; */
     font-family: 'Berkshire Swash', cursive; 
@@ -46,54 +34,21 @@ header .logo h1 {
     border: 3px solid #fff;
     border-radius: 30px;
 }
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-    color: green;
+.animacao {
+    animation-name: txtBig;
+    animation-duration: 4s;
+    animation-delay: 2s;
 }
-header > nav > .nav-item > a {
-    font-size: 20px !important;
-}
-header nav {
-    padding-top: 25px;
-}
-header nav > ul {
-    padding-left: 0;
-    list-style: none;
-    display: flex;
-}
-header nav > ul > li {
-    position: relative;
-}
-header nav > ul > li > a,
-header nav > ul > li > a:visited {   
-  font-size: 18px;
-  padding: 10px 20px;
-  background-color: transparent;
-  /* color: rgb(24, 24, 75); */
-  color: #fff !important;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: 500;
+@keyframes  txtBig {
+    0% { font-size: 22px;}
+    50% { font-size: 38px;
+           color:yellow;}
+    100% { font-size: 22px;}
 }
 
-/* header nav > ul > li > a:hover,
-/* header nav > ul > li > a:active, */
-header nav > ul > li > a.linkActive {
-  background-color: #fff;
-  color: #001b33 !important;
-}
-nav>ul>li>a:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    right: 10%;
-    bottom: 0;
-    transition: all 0.3s linear;
-}
-nav>ul>li>a:hover:after {
-    width: 80%;
+.txtLato20 {
+    font-family:'Lato', sans-serif !important;
+    font-size: 20px !important;
 }
 
 .banner h2 {
@@ -106,6 +61,63 @@ nav>ul>li>a:hover:after {
     font-size: 15pxm;
     padding: 10px 70%  10px 50px;
 }
+
+.lightSpeedIn {
+    -webkit-animation-name: lightSpeedIn;
+    animation-name: lightSpeedIn;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    }
+    @-webkit-keyframes lightSpeedIn {
+    0% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+    }
+    60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+    }
+    80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    }
+    }
+    @keyframes lightSpeedIn {
+    0% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+    }
+    60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+    }
+    80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    }
+    } 
+
 .inicio p {
     color: #fff;
     font-size: 18px;
@@ -133,8 +145,8 @@ nav>ul>li>a:hover:after {
 }
 
 .carousel-img {
-    width: 100%;
-    height: 500px;
+    width: 100vw;
+    height: 600px;
     background-size: cover;
     background-position: center;
   }
@@ -151,28 +163,29 @@ nav>ul>li>a:hover:after {
     padding-top: 50px;
 }
 .post {
-    /* width: 280px; */
     display:flex;
     flex-direction: column;
-    /* float: left; */
 }
 .post img {
     width: 100%;
-    /* width: 282px; */
-    height: 220px;;
+    height: 220px;
 }
+
 .post i {
     font-size: 10px;
     color: #001b33;
     padding-left: 5px;
 }
+.post h5 {
+    font-size: 15px;
+}
 .post ul {
-    background-color:#001b33;
     text-align: center;
     text-align: left;
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 50px;
+    filter: grayscale(60%)
 }
 .post > ul > li {
     text-decoration: none;
@@ -204,13 +217,14 @@ nav>ul>li>a:hover:after {
     transform: scale(1.15);
     transition: 1s;
     z-index: 10;
+    filter: grayscale(0%)
 }
 .post ul:hover li > ul {
     display: block;
     transform: scale(1.0);
     transition: 0.3s;
 }
-.modal > .modal-header > img {
+ .modal-header > .modal-title > img {
     width: 100%;
 }
 .modal > .modal-body > i {
@@ -224,7 +238,7 @@ footer {
     text-align: center;
     padding-top: 50px;
 }
-footer > .logo > h1 > a {
+footer > .logo > h2 > a {
     display: inline-block;
     font-family: 'Berkshire Swash', cursive;
     font-size: 30px;
@@ -264,15 +278,7 @@ header .logo h1 {
     font-size: 30px;
     border-radius: 30px;
 }
-/* .banner h2 {
-    color: #fff;
-    font-size: 2.5em;
-}
-.banner p {
 
-    color: #fff;
-    font-size: 1.5em;
-} */
 .banner h2 {
     color: #fff;
     font-size: 25px;
@@ -293,7 +299,7 @@ header nav > ul > li > a:visited {
   font-size: 15px;
   padding: 8px 16px;
 }
-footer > .logo > h1 {
+footer > .logo > h2 {
     font-size: 25px;
     border-radius: 25px;
 }
@@ -325,7 +331,7 @@ header nav > ul > li > a:visited {
     font-size: 22px;
     padding: 20px 50px 50px 50px; 
 }
-footer > .logo > h1 {
+footer > .logo > h2 {
     font-size: 23px;
     border-radius: 23px;
 }
@@ -370,5 +376,4 @@ footer ul > li > a:visited {
   padding: 10px 6px;
 }
 
-/* CRIAR MENU SANDWISH - TELA ATE 768PX */
 }
