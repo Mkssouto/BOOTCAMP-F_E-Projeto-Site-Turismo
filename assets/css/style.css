@@ -9,6 +9,7 @@ html, body {
     width: 100%;
     font-family:'Lato', sans-serif;
     background-color: #001b33;
+    /* background-color: FFF; */
 } 
 .container {
     max-width: 1280px;
@@ -154,7 +155,9 @@ header .logo h1 {
     max-width: 1400px;
     width: 100%;
     background-color: #001b33;
+    /* background-color: #fff; */
     margin: 0 auto;
+    padding-bottom: 50px;
 }
 .destinos h2 {
     font-size: 20px;
@@ -165,21 +168,46 @@ header .logo h1 {
 .post {
     display:flex;
     flex-direction: column;
+    /* padding-bottom: 50px; */
 }
 .post img {
     width: 100%;
     height: 220px;
 }
+.post img:hover {
+    filter: grayscale(60%);
+    /* transform: scale(1.15);
+    transition: 1s;
+    z-index: 10; */
+}
+.postLocal {
+    background-color: #fff;
+    color: #001b33;
+    padding-left: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+}
+
+.postLocal > a > i {
+    font-size: 15px;
+    padding-top: 5px;
+    /* padding: 10px; */
+}
+.postLocal h3 {
+    font-size: 15px;
+    padding-top: 5px;
+}
 
 .post i {
-    font-size: 10px;
+    font-size: 15px;
     color: #001b33;
     padding-left: 5px;
 }
 .post h5 {
     font-size: 15px;
 }
-.post ul {
+/* .post ul {
     text-align: center;
     text-align: left;
     padding: 10px;
@@ -232,12 +260,73 @@ header .logo h1 {
 }
 .modal > .modal-body > a:active {
     color: red;
+} */
+
+
+button {
+    border: 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #313131;
+    padding: 3px;
 }
+.label {
+    display: flex;
+    align-items: center;
+}
+.label i {
+    font-size: 20px;
+    color: #001b33;
+}
+#number {
+    padding-left: 10px;
+}
+
+
 footer {
     background-color: rgba(8, 9, 10, 0.932);
     text-align: center;
     padding-top: 50px;
 }
+
+.fusoHorario {
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+#clock  {
+    /* width: 100%;
+    position: relative; */
+    margin: 0 auto;
+    display: flex;
+    color:#fff;
+}
+.horas {
+    width: 350px;
+    position: relative;
+    display: flex;
+    text-align: center;  
+    align-items: center;
+    justify-content: center;
+}
+
+ #clock #time div span {
+    position: flex;
+    float: left;
+    display: block;
+    color:#fff;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    font-size: 25px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
 footer > .logo > h2 > a {
     display: inline-block;
     font-family: 'Berkshire Swash', cursive;
@@ -376,4 +465,4 @@ footer ul > li > a:visited {
   padding: 10px 6px;
 }
 
-}
+} 
